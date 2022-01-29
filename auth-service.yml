@@ -6,16 +6,19 @@ spring:
         url: jdbc:mysql://localhost:3306/olx-users
         driver-class-name: com.mysql.cj.jdbc.Driver
         username: root
-        password: Ajay@123
+        password: root
    jpa:
         hibernate.ddl-auto: update
         properties:
              hibernate:
                 dialect: org.hibernate.dialect.MySQL8Dialect
                   
-   application:          name: auth-service
+   application:
+          name: auth-service
           
      
 
-eureka:  client:    register-with-eureka: true
+eureka:
+  client:
+    register-with-eureka: true
     fetch-registry: true  
